@@ -1,6 +1,6 @@
 import { ArrowRight, Sparkles, Menu } from 'lucide-react'
 import logoUrl from '../assets/logo.svg'
-import DashboardMockup from './DashboardMockup.jsx'
+import dashboardImg from '../assets/dashboard.png'
 
 export default function Hero() {
   return (
@@ -71,7 +71,11 @@ export default function Hero() {
 
         {/* dashboard */}
         <div className="pb-20 pt-4 max-w-5xl mx-auto">
-          <DashboardMockup />
+          <img
+            src={dashboardImg}
+            alt="Dashboard do VidaPet"
+            className="w-full h-auto rounded-2xl shadow-soft ring-1 ring-white/10 select-none"
+          />
         </div>
       </div>
     </section>
