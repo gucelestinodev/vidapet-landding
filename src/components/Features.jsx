@@ -5,48 +5,49 @@ const items = [
     icon: Pill,
     color: '#FF7631',
     title: 'Medicamentos com 1 toque',
-    text: 'Cadastre uma vez, o sistema gera a rotina diária. Marque que deu o remédio em 1 toque. Descontos do estoque automaticamente.',
-    tag: 'Popular',
-    tagColor: '#FF7631'
+    text: 'Cadastre uma vez, o sistema gera a rotina diária. Marque que deu o remédio em 1 toque. Desconta do estoque automaticamente.',
+    pill: 'Adesão +98%'
   },
   {
     icon: ClipboardList,
     color: '#67B171',
     title: 'Histórico Clínico',
-    text: 'Tenha todos os exames, laudos e registros do seu pet organizados em um só lugar. Com anexos feitos por você e pelo veterinário, o Vida Pet cria um histórico completo e seguro, que pode ser acessado por outros profissionais no futuro, garantindo mais agilidade, continuidade no cuidado e decisões clínicas mais precisas.',
-    highlight: true,
-    tag: 'Destaque',
-    tagColor: '#67B171'
+    text: 'Tenha todos os exames, laudos e registros do seu pet organizados em um só lugar. Com anexos feitos por você e pelo veterinário, o Vida Pet cria um histórico completo e seguro, acessado por outros profissionais quando necessário.',
+    pill: 'Tempo real'
   },
   {
     icon: Siren,
     color: '#E15252',
     title: 'Modo emergência',
-    text: 'Veja alergias, peso, vacinas, contatos do vet e histórico em PDF pronto para a veterinária. Funciona em todo plano, inclusive grátis.'
+    text: 'Veja alergias, peso, vacinas, contatos do vet e histórico em PDF pronto para a veterinária. Funciona em todo plano, inclusive grátis.',
+    pill: 'Sempre grátis'
   },
   {
     icon: CalendarCheck,
     color: '#1D57A5',
     title: 'Agenda inteligente',
-    text: 'Vacinas, vermífugo, antipulgas, banho e consultas agendados automaticamente. Avisa quando se aproxima. Reconfirma configurável.'
+    text: 'Vacinas, vermífugo, antipulgas, banho e consultas agendados automaticamente. Avisa quando se aproxima. Reconfirmação configurável.',
+    pill: 'Auto-gerada'
   },
   {
     icon: Clock4,
     color: '#9C6BD9',
     title: 'Linha do tempo da vida',
-    text: 'Cada momento preservado: primeiro banho, viagens, conquistas e ensinamentos. Com fotos, dia a dia do seu raça/jet. Memória para sempre.'
+    text: 'Cada momento preservado: primeiro banho, viagens, conquistas e ensinamentos. Com fotos, dia a dia do seu pet. Memória para sempre.',
+    pill: 'Fotos incluídas*'
   },
   {
     icon: PackageOpen,
     color: '#007C58',
     title: 'Estoque em casa',
-    text: 'Ração, remédios, petiscos, higiene. Calcula dias restantes pelo consumo diário. Alerta antes de acabar. Lista de compras automática.'
+    text: 'Ração, remédios, petiscos, higiene. Calcula dias restantes pelo consumo diário. Alerta antes de acabar.',
+    pill: 'Lista automática'
   }
 ]
 
 export default function Features() {
   return (
-    <section id="funcionalidades" className="bg-cream py-20">
+    <section id="funcionalidades" className="bg-cream py-20 sm:py-24">
       <div className="container-page">
         <p className="chip mb-4">FUNCIONALIDADES</p>
         <h2 className="font-serif font-bold text-4xl sm:text-5xl leading-tight max-w-3xl">
@@ -61,25 +62,36 @@ export default function Features() {
           {items.map((it) => (
             <article
               key={it.title}
-              className={`card relative ${it.highlight ? 'ring-2 ring-greenmid/60 bg-greenmid/5' : ''}`}
+              className="card relative flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-soft"
+              style={{ '--accent': it.color }}
             >
-              {it.tag && (
-                <span
-                  className="absolute -top-2 right-4 rounded-full px-2 py-0.5 text-[10px] font-semibold text-white"
-                  style={{ background: it.tagColor }}
-                >
-                  {it.tag}
-                </span>
-              )}
+              <span
+                className="absolute inset-x-0 top-0 h-1 rounded-t-2xl opacity-90"
+                style={{ background: `linear-gradient(90deg, ${it.color}00, ${it.color}, ${it.color}00)` }}
+                aria-hidden
+              />
+
               <div
-                className="h-10 w-10 rounded-xl flex items-center justify-center mb-4"
+                className="h-12 w-12 rounded-2xl flex items-center justify-center mb-5"
+                style={{ background: `${it.color}1F`, color: it.color }}
+              >
+                <it.icon size={22} strokeWidth={2} />
+              </div>
+
+              <h3 className="font-serif font-bold text-lg text-navy leading-snug">{it.title}</h3>
+              <p className="text-sm text-navy/65 mt-2 leading-relaxed flex-1">{it.text}</p>
+
+              <span
+                className="self-start inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[11px] font-bold mt-5"
                 style={{ background: `${it.color}1A`, color: it.color }}
               >
-                <it.icon size={20} />
-              </div>
-              <h3 className="font-serif font-bold text-lg text-navy">{it.title}</h3>
-              <p className="text-sm text-navy/70 mt-2 leading-relaxed">{it.text}</p>
-              <button className="mt-4 text-sm font-semibold text-orange-600 hover:underline">Saiba mais →</button>
+                <span
+                  className="h-1.5 w-1.5 rounded-full"
+                  style={{ background: it.color }}
+                  aria-hidden
+                />
+                {it.pill}
+              </span>
             </article>
           ))}
         </div>

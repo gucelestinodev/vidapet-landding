@@ -1,5 +1,5 @@
 import { ArrowRight, Sparkles, Menu } from 'lucide-react'
-import Logo from './Logo.jsx'
+import logoUrl from '../assets/logo.svg'
 import DashboardMockup from './DashboardMockup.jsx'
 
 export default function Hero() {
@@ -13,7 +13,11 @@ export default function Hero() {
       <div className="relative container-page">
         {/* nav */}
         <nav className="flex items-center justify-between py-5">
-          <Logo light />
+          <img
+            src={logoUrl}
+            alt="VidaPet"
+            className="h-8 w-auto select-none"
+          />
           <div className="hidden md:flex items-center gap-8 text-sm text-white/80">
             <a href="#funcionalidades" className="hover:text-white">Funcionalidades</a>
             <a href="#planos" className="hover:text-white">Planos</a>

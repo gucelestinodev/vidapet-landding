@@ -1,12 +1,12 @@
 import { Instagram, Twitter, Youtube, Heart } from 'lucide-react'
-import Logo from './Logo.jsx'
+import logoUrl from '../assets/logo2.svg'
 
 export default function Footer() {
   return (
     <footer className="bg-cream border-t border-navy/10">
       <div className="container-page py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <Logo />
+          <img src={logoUrl} alt="VidaPet" className="h-8 w-auto select-none" />
           <p className="text-sm text-navy/65 mt-4 max-w-xs">
             O app mais completo para tutores e veterinários cuidarem do que mais amam.
           </p>
