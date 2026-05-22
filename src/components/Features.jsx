@@ -19,7 +19,7 @@ const items = [
     icon: Siren,
     color: '#E15252',
     title: 'Modo emergência',
-    text: 'Veja alergias, peso, vacinas, contatos do vet e histórico em PDF pronto para a veterinária. Funciona em todo plano, inclusive grátis.',
+    text: 'Veja alergias, peso, vacinas, contatos do vet e histórico em PDF pronto para a veterinária.',
     pill: 'Sempre grátis'
   },
   {

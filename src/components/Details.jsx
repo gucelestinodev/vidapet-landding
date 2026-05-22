@@ -44,15 +44,15 @@ function CardOne() {
           🐶
         </div>
         <div>
-          <p className="font-semibold">Toby</p>
-          <p className="text-xs text-white/60">Golden • 4 anos</p>
+          <p className="font-semibold">Toddy</p>
+          <p className="text-xs text-white/60">Pug • 4 anos</p>
         </div>
       </div>
       <div className="mt-5 grid grid-cols-2 gap-2">
         <div className="rounded-lg bg-white/5 p-3">
           <p className="text-[10px] uppercase tracking-wider text-white/55">Peso</p>
           <p className="font-serif text-2xl font-bold mt-1">
-            32<span className="text-sm font-sans font-medium text-white/70">kg</span>
+            10<span className="text-sm font-sans font-medium text-white/70">kg</span>
           </p>
         </div>
         <div className="rounded-lg bg-white/5 p-3">

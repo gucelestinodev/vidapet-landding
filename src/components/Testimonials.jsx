@@ -44,11 +44,6 @@ export default function Testimonials() {
             </article>
           ))}
         </div>
-
-        <p className="text-xs text-navy/50 mt-10 max-w-2xl mx-auto">
-          Antes de marcar perdo aos pedais de companheiros de Dna Vega.
-          Você bem cuida do seu, bem organizado, e o seu dia tudo isso mais transação na rotina.
-        </p>
       </div>
     </section>
   )

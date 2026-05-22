@@ -11,7 +11,7 @@ const patients = [
   { name: 'Thor', breed: 'Pastor Alemão • 6 anos', score: 87, tag: 'OK', tone: 'green' },
   { name: 'Luna', breed: 'Vira-lata • 3 anos', score: 72, tag: 'Atenção', tone: 'orange' },
   { name: 'Mel', breed: 'Persa • 8 anos', score: 64, tag: 'Acompanhar', tone: 'orange' },
-  { name: 'Rex', breed: 'Golden • 11 anos', score: 91, tag: 'OK', tone: 'green' }
+  { name: 'Rex', breed: 'Pug • 11 anos', score: 91, tag: 'OK', tone: 'green' }
 ]
 
 export default function VetPanel() {
