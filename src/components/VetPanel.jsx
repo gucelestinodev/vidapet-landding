@@ -45,7 +45,7 @@ export default function VetPanel() {
           </ul>
 
           <div className="flex flex-wrap gap-3 mt-8">
-            <a className="btn-primary">Criar conta veterinária</a>
+            <a href="https://lab.vidapet.app" target="_blank" className="btn-primary">Criar conta veterinária</a>
             <a className="rounded-full border border-white/20 px-5 py-3 text-sm text-white/90 hover:bg-white/10 inline-flex items-center gap-2">
               Ver painel demo →
             </a>

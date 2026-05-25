@@ -18,7 +18,7 @@ export default function FinalCTA() {
               Comece hoje. Organize vacinas, exames, suprimentos e todo o histórico clínico do seu pet em um só lugar, com praticidade e contato direto com o veterinário em tempo real.            
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-              <a className="btn-primary">Criar conta grátis <ArrowRight size={16} /></a>
+              <a href="https://lab.vidapet.app" target="_blank" className="btn-primary">Criar conta grátis <ArrowRight size={16} /></a>
             </div>
           </div>
         </div>

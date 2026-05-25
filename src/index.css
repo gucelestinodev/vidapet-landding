@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   html, body {
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
     background: #F0EEE9;
