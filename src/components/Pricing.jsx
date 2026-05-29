@@ -4,7 +4,6 @@ const features = [
   'Pets ilimitados (R$ 9,90 por pet)',
   'Lembretes de vacinas e vermífugos',
   'Agenda completa de cuidados',
-  'Score de saúde com IA',
   'Histórico clínico exportável',
   'Modo emergência 24h',
   'Cancele quando quiser, sem multa'
@@ -12,10 +11,10 @@ const features = [
 
 export default function Pricing() {
   return (
-    <section id="planos" className="bg-cream py-20 sm:py-24 relative overflow-hidden">
+    <section id="planos" className="bg-cream pt-10 pb-16 sm:pt-12 sm:pb-20 relative overflow-hidden">
       <div
-        className="absolute -top-24 left-1/2 -translate-x-1/2 h-72 w-[80%] max-w-3xl rounded-full blur-3xl opacity-30 pointer-events-none"
-        style={{ background: '#FF7631' }}
+        className="absolute top-0 left-1/2 -translate-x-1/2 h-[420px] w-[90%] max-w-4xl pointer-events-none"
+        style={{ background: 'radial-gradient(closest-side, rgba(255,118,49,0.28), transparent 75%)' }}
       />
 
       <div className="container-page relative">

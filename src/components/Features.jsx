@@ -34,7 +34,8 @@ const items = [
     color: '#9C6BD9',
     title: 'Linha do tempo da vida',
     text: 'Cada momento preservado: primeiro banho, viagens, conquistas e ensinamentos. Com fotos, dia a dia do seu pet. Memória para sempre.',
-    pill: 'Fotos incluídas*'
+    pill: 'Fotos incluídas*',
+    soon: true
   },
   {
     icon: PackageOpen,
@@ -70,6 +71,12 @@ export default function Features() {
                 style={{ background: `linear-gradient(90deg, ${it.color}00, ${it.color}, ${it.color}00)` }}
                 aria-hidden
               />
+
+              {it.soon && (
+                <span className="absolute top-3 right-3 rounded-full bg-navy text-white text-[10px] font-bold tracking-wider px-2.5 py-1 uppercase">
+                  Em breve
+                </span>
+              )}
 
               <div
                 className="h-12 w-12 rounded-2xl flex items-center justify-center mb-5"
