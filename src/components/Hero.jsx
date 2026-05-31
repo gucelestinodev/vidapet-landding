@@ -24,7 +24,7 @@ export default function Hero() {
             <a href="#veterinarios" className="hover:text-white">Para veterinários</a>
           </div>
           <div className="flex items-center gap-3">
-            <a href="https://lab.vidapet.app" target="_blank" className="btn-primary">
+            <a href="https://app.vidapet.app" target="_blank" className="btn-primary">
               Entrar <ArrowRight size={16} />
             </a>
             <button className="md:hidden text-white/90"><Menu /></button>

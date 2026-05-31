@@ -45,7 +45,7 @@ export default function VetPanel() {
           </ul>
 
           <div className="flex flex-wrap gap-3 mt-8">
-            <a href="https://lab.vidapet.app" target="_blank" className="btn-primary">Criar conta veterinária</a>
+            <a href="https://app.vidapet.app" target="_blank" className="btn-primary">Criar conta veterinária</a>
           </div>
         </div>
 

@@ -67,7 +67,7 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <a href="https://lab.vidapet.app" target="_blank" className="btn-primary w-full mt-8 block text-center">Começar agora</a>
+            <a href="https://app.vidapet.app" target="_blank" className="btn-primary w-full mt-8 block text-center">Começar agora</a>
 
             <p className="text-center text-[11px] text-navy/45 mt-4">
               Sem cartão para começar. Cancele a qualquer momento.
